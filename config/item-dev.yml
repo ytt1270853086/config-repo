@@ -1,0 +1,21 @@
+ #server:
+  #port: 8001
+  
+ spring:
+  appliction:
+   name: item-service
+ euerke:
+  client:
+   service-url:
+    defaultZone: http://enreka1:2001/eureka
+---
+spring:
+ profiles: item1
+ 
+server:
+ port: 8001
+---
+spring:
+ profiles: item2
+server:
+ port: 8002
